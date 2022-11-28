@@ -1,0 +1,10 @@
+<li class="nav-item dropdown">
+    <a href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Categories</a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        {% for category in category_list}
+        <a href="/category/{{ category.name }}" class="dropdown-item">
+            {{ category.name|title}}
+        </a>
+        {% endfor %}
+    </div>
+</li>
